@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  background-color: #6495ed;
+}
+
+h2 {
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+.fa-heart {
+  color: #dc143c;
+}
+
+.likeIt {
+  height: 440px;
+  width: 300px;
+  background: url('picture.jpg') center;
+  margin: auto;
+  cursor: pointer;
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+}
+
+.likeIt .fa-heart {
+  position: absolute;
+  animation: grow 0.5s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
